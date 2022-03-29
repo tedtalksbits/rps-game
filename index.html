@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>RPS</title>
+  </head>
+  <body>
+    <button id="play">Play</button>
+    <h2 id="score">Score:</h2>
+    <main>
+      <h1 id="gameMessage"></h1>
+      <div class="chars-options-container animate__animated fadeOutLeft">
+        <h3>Choose your fighter</h3>
+        <div class="flex-center charSelect" id="rock">
+          <img
+            src="/assets/images/rock.png"
+            alt="rock"
+            class="char-select-img"
+          />
+          <div class="char-info">
+            <p>Rock</p>
+            <h3>Rock</h3>
+            <small>Lorem ipsum dolor sit amet.</small>
+          </div>
+        </div>
+        <div class="flex-center charSelect" id="scissors">
+          <img
+            src="/assets/images/scissors.png"
+            alt="scissors"
+            class="char-select-img"
+          />
+          <div class="char-info">
+            <p>Scissors</p>
+            <h3>METAL</h3>
+            <small>Lorem ipsum dolor sit amet.</small>
+          </div>
+        </div>
+        <div class="flex-center charSelect" id="paper">
+          <img
+            src="/assets/images/paper.png"
+            alt="paper"
+            class="char-select-img"
+          />
+          <div class="char-info">
+            <p>Paper</p>
+            <h3>PAPER</h3>
+            <small>Lorem ipsum dolor sit amet.</small>
+          </div>
+        </div>
+      </div>
+      <div class="char-container">
+        <div class="char-img-container" id="user">
+          <img src="" alt="" class="char-img" id="charImg" />
+        </div>
+        <div class="char-name-container">
+          <h1 class="char-name" id="charName"></h1>
+        </div>
+      </div>
+      <div class="bot-char-container" id="bot">
+        <div class="char-container hidden" id="botCharContainer">
+          <div class="char-img-container">
+            <img src="" alt="" class="char-img flip-img" id="botCharImg" />
+          </div>
+          <div class="char-name-container">
+            <h1 class="char-name" id="botCharName"></h1>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
+</html>

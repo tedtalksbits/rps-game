@@ -1,0 +1,140 @@
+:root {
+  --surface-900: #353c42;
+  --surface-400: #424e58;
+  --white: #cbe2f7;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+html {
+  font-family: "Cinzel", serif;
+  background-color: var(--surface-900);
+  color: var(--white);
+}
+body {
+  block-size: 100vh;
+  overflow: hidden;
+}
+main {
+  display: grid;
+  grid-template-columns: auto;
+  height: 100%;
+  position: relative;
+}
+main.split {
+  grid-template-columns: 0.5fr 0.5fr;
+}
+
+/* character options left */
+.chars-options-container {
+  position: absolute;
+  left: 7%;
+  top: 30%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: background ease-in-out 0.3s;
+}
+.flex-center:hover {
+  background: rgba(245, 245, 245, 0.158);
+  outline: 1px solid rgba(245, 245, 245, 0.158);
+}
+.char-select-img {
+  height: 5rem;
+  object-fit: contain;
+  width: 5rem;
+  background-color: var(--white);
+}
+
+/* character center */
+.char-img {
+  width: 100%;
+  block-size: 100vh;
+  object-fit: contain;
+}
+/* .char-img-container::after {
+  content: "";
+  background-color: rgb(162, 202, 218);
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 4rem;
+  border-radius: 50%;
+  z-index: -1;
+  margin-inline: auto;
+} */
+.char-container {
+  position: relative;
+  display: grid;
+  align-items: center;
+}
+.hidden {
+  display: none;
+}
+.char-name-container {
+  position: absolute;
+  right: 20%;
+  bottom: 3rem;
+}
+.char-name-container h1.char-name {
+  font-size: clamp(2rem, 8vw, 6rem);
+  text-shadow: #47474725 3px 3px 2px;
+}
+
+/*
+   ========================================
+   bg-gradients
+   ========================================
+*/
+.rock-gradient {
+  background: linear-gradient(90deg, #b3915f 0%, #313a41 100%);
+}
+
+/* playing */
+#play {
+  position: absolute;
+  top: 2rem;
+  z-index: 2000;
+  padding: 1rem;
+  border: none;
+  background: var(--white);
+  cursor: pointer;
+  font-weight: 500;
+  font-family: "Cinzel", serif;
+  font-size: 2rem;
+}
+.flip-img {
+  transform: scaleX(-1);
+}
+#gameMessage {
+  position: absolute;
+  font-size: clamp(2.2rem, 8vw, 7rem);
+  top: 20%;
+  z-index: 1999;
+  right: 50%;
+  text-shadow: #47474734 3px 3px 2px;
+}
+/* https://produde123.newgrounds.com/ */
