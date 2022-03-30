@@ -54,11 +54,15 @@ main.split {
   align-items: center;
   gap: 1rem;
   cursor: pointer;
-  transition: background ease-in-out 0.3s;
-}
-.flex-center:hover {
+  backdrop-filter: blur(10px);
   background: rgba(245, 245, 245, 0.158);
   outline: 1px solid rgba(245, 245, 245, 0.158);
+  transition: all ease-in-out 0.3s;
+}
+.flex-center:hover {
+  background: rgba(100, 100, 100, 0.158);
+  outline: 2px solid rgba(100, 100, 100, 0.158);
+  color: whitesmoke;
 }
 .char-select-img {
   height: 5rem;
