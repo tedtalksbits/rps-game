@@ -27,3 +27,7 @@ open `index.html` in your browser
 - JS
 - HTML5
 - CSS
+
+## Image Atrribution
+
+Images from amazing the [artist: produde123](https://produde123.newgrounds.com/)
